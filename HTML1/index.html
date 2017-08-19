@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+	<meta charset='UTF-8'/>
+	<title>Tupperware</title>
+	<link rel='shortcut icon' href='../HTML/icon.png'/>
+	<style>
+		body{
+			background:url("../HTML/capasite.jpg");
+	
+		}
+		div#home {
+			width: 500px;
+			padding: 0px 0px;
+
+		}
+		figure.foto-legenda{
+			border: 5px solid black;
+			box-shadow: 1px 1px 10px black;
+			
+		}
+
+		figure.foto-legenda img{
+			opacity: 0;
+			width: 100%;
+			height:100%;
+			
+			transition: opacity 1s;
+
+		}
+		figure.foto-legenda:hover img{
+			opacity: 1
+		}
+		nav#menu{
+			display: block;
+		}
+		nav#menu li{
+			display: inline-block;
+			background-color: #dddddd;
+			padding: 10px;
+			margin: 3px;
+
+		}
+		nav#menu ul{
+			position: absolute;
+			left: 300px;
+			
+		}
+		nav#menu a:hover{
+			color: #ffffff;
+		}
+		nav#menu li:hover{
+			background-color: #606060;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id='home'>
+	<figure class='foto-legenda'>
+		<img src="Tupperware.jpg"/>
+	</figure>
+	</div>
+<nav id='menu'>
+		<ul>
+		<li><a href="http://tupperware.com.br" target='_blank'>Tupperwares</a></li>
+			<!-- <ul id='menu2'>
+				<li>Garrafas</li>
+				<li>Tigela Maravilhosa</li>
+				<li>Turbo Chef</li>
+				<li>Jeitosa</li>
+			</ul> -->
+		<li>Revista</li>
+		<li>Registro</li>
+		<li>Contatos</li>
+	</ul>
+</nav>
+	
+</body>
+</html>

@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* Caractericas dos textos e da pagina */
+body{
+	background-color: pink;
+	}
+/*Formatação da inteface do site*/
+div#interface {
+	width: 900px;
+	background-color: white;
+	margin: -20px auto 0px auto ;/* margen de fora de tudo que esta no div*/
+	padding: 10px 10px 10px;/* margen de dentro de tudo que esta no div*/
+	border: 0px 0px 10px rgba(0,0,0,0.5);
+}
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+a{
+	color: #606060;
+	text-decoration: none;
+}
+/*Formatação do oculos*/
+header#cabecalho img#icone{
+	position: absolute;
+	left: 900px;
+	top:100px;
+}
+a:hover{
+	text-decoration: underline; /*coloca um sublinhado no no link quando passa o mous*/
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid;/*Linha que divide o cabeçalho na horizontal do resto  */
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80px;/*coloca imagem no fundo (o '..'-> é para voltar a pasta onde esta a img. no-repeat é para não repetir a img e os pxs são as posições que eu quero*/
+}
+header#cabecalho h1{
+	font-family: Arial, sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	padding: 0px;/*tirar todo o espaço de dentro */
+	margin-bottom: 0px; /*ajusta a parte de baixo para o h2 ficar mais perto*/
+
+}
+header#cabecalho h2{
+	font-family: Arial, sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	margin-top: 0px; /*Ajusta a parte de cima para ficar mais perto do h1 */
+	padding: 0px;/*tirar todo o espaço de dentro */
+
+}
+/* Formatação de imagens com legendas */
+
+/*classe*/
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height:100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* Formatação do Menu */
+nav#menu{
+	display: block;/* Um bloco se mexer para qual quer lugar*/	
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;/*dixar maiúsculo*/
+	position: absolute; /*vai andar por todo site*/
+	top: 0px;
+	left: 500px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 2s;
+
+}
+nav#menu li:hover{
+	background-color: #606060;/*muda a cor da caixa quando eu passo o meuse no menu pricipal*/
+}
+nav#menu a:hover{
+	color: white; /*mudar a cor quando passo em cima do botão*/
+}
+nav#menu a{/* todo link. No caso a (ancora) ficar diferente quando passa o mouse*/
+	color: black;
+	text-decoration: none; /*tirar o sublinhado*/
+}
+
+nav#menu h1{
+	display: none;
+}
+section#corpo{
+	display: block;
+	width: 512px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right:  15px
+
+}
+article#noticia-principal h2{
+	
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 0px ;/*CDBE*/
+	margin: 10px 0px 10px 0px;
+
+}
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20px;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+
+}
+header#cabecalho-artigo h2{
+	font-size: 14px;
+	background-color: #ffffff;/*teirei o fundo que tinha */
+	color: #cecece;
+	margin: 4px;
+
+
+}
+.direita{
+	text-align: right;
+}
+header#cabecalho-artigo h3{
+	font-size: 12px;
+	color: #606060;
+	margin-bottom: 5px;
+
+}
+table#tabela{ /*isso aki é toda a tabela*/
+	border: 1px solid #606060;
+	border-spacing: 0px; /*nenhum espaço entre as celulas da tabela*/
+	margin-right: auto; /*margem automatica para centralizar*/
+	margin-left: auto;
+	margin-top: -70px;/*deixar a tabela perto do nome acima*/
+
+
+}
+table#tabela td{
+	border:1px solid #606060;/**/
+	padding: 10px; /*espação entre as celulas*/
+	text-align: right; /*coloca o texto mais a direita*/
+	vertical-align: top;/*coloca o texto na parte de cima*/
+}
+table#tabela td.cd{/*criei uma classe para todas as celulas da direita*/
+	background-color: pink;
+}
+table#tabela td.ce{ /* criei uma classe para alterar somentes as celulas à esquerda */
+	color: black;
+	font-weight: bolder;/* para deixar em negrito*/
+	background-color: #FF99CC;
+}
+
+table#tabela caption{
+	color: #666666;
+	font-size: 14px;
+	font-weight: bolder;
+
+}
+
+table#tabela caption span{
+	display: block; /*para ficar fora do texto flutuando*/
+	float: right; /* flutuando para a esquerda */
+	margin-top: 7px;
+	font-size: 9px;]
+	color: black;
+
+}	
+aside#lateral{
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5)/*sombra preta com 50% de transparencia*/
+}
+aside#lateral h1{
+	font-family: Arial;
+	font-size: 20px;
+	color:#606060;
+	margin-top: 0px;
+}
+aside#lateral h2{
+	background-color: #606060;
+	color:#ffffff; /*cor branca*/
+	font-size: 18px;
+}
+footer#rodape{
+	border-top: 1px solid #606060;
+	clear: both; /* Limpa as configurações dos 2 lados*/
+
+}
+
+footer#rodape h4{
+	text-align: center;/*centralizar tudo que for h4*/
+}
